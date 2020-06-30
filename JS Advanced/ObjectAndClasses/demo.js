@@ -1,12 +1,12 @@
 
 
-function solve() {
-    let x = {name: "John"};
-    let y = x;
+class Person {
+    constructor(name,age) {
+        this.name = name;
+        this.age = age;
+        this.items = [];
+    }
 
-    y.name = "Kate";
-
-    console.log(x.name);
 }
 
-solve();
+var p = new Person('Ivan',20);
